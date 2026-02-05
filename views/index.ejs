@@ -1,0 +1,174 @@
+<%- include('partials/header') %>
+
+<style>
+    /* 🟢 CONTINUE WATCHING SECTION */
+    .history-section {
+        padding: 20px;
+        display: none; /* JS se show hoga */
+    }
+    .history-scroll {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scrollbar-width: none;
+    }
+    .history-scroll::-webkit-scrollbar { display: none; }
+    
+    .history-card {
+        min-width: 160px;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        text-decoration: none;
+        transition: transform 0.2s;
+    }
+    .history-card:hover { transform: scale(1.05); }
+    .hist-img { width: 100%; height: 90px; object-fit: cover; filter: brightness(0.6); }
+    .hist-info {
+        position: absolute; bottom: 0; left: 0; width: 100%;
+        padding: 8px; background: linear-gradient(to top, black, transparent);
+    }
+    .hist-title { color: white; font-size: 12px; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .hist-ep { color: var(--primary); font-size: 11px; font-weight: 700; }
+    .play-overlay {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        font-size: 20px; color: white; opacity: 0.8;
+    }
+
+    /* 🟢 RECENT UPLOADS (CLEAN CARDS) */
+    .anime-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 15px;
+        padding: 0 15px;
+    }
+    .grid-card {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        text-decoration: none;
+        aspect-ratio: 2/3;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: 0.2s;
+        background: #111;
+    }
+    .grid-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(255, 180, 58, 0.2); }
+    
+    .grid-img { width: 100%; height: 100%; object-fit: cover; }
+    
+    /* Card Overlay (Only Title Now) */
+    .card-overlay {
+        position: absolute; bottom: 0; left: 0; width: 100%;
+        height: 50%; /* Fade effect */
+        background: linear-gradient(to top, #000 20%, transparent);
+        display: flex; flex-direction: column; justify-content: flex-end;
+        padding: 10px;
+    }
+    .card-title { 
+        color: white; 
+        font-size: 13px; 
+        font-weight: bold; 
+        line-height: 1.2; 
+        text-align: center; /* Center align title for cleaner look */
+        margin-bottom: 5px;
+        display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; 
+    }
+
+    /* TRENDING CLEAN */
+    .trending-slider {
+        display: flex; gap: 15px; overflow-x: auto; padding: 0 15px; scrollbar-width: none;
+    }
+    .trend-card { min-width: 140px; border-radius: 10px; overflow: hidden; position: relative; }
+    .trend-poster { width: 100%; height: 210px; object-fit: cover; border-radius: 10px; }
+</style>
+
+<% if (heroAnime) { %>
+    <div class="hero">
+        <img src="<%= heroAnime.coverImage || heroAnime.thumbnail %>" class="hero-bg" alt="<%= heroAnime.title %>">
+        
+        <div class="hero-content">
+            <span class="spotlight-badge">#1 Spotlight</span>
+            <h1><%= heroAnime.title %></h1>
+            
+            <p class="desc" style="max-width:600px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color:#ccc; font-size:13px; margin-bottom:15px; margin-top: 10px;">
+                <%= heroAnime.description || 'Watch this anime in high quality.' %>
+            </p>
+            
+            <div class="hero-btns">
+                <% if(heroAnime.seasons.length > 0 && heroAnime.seasons[0].episodes.length > 0) { %>
+                    <a href="/watch/<%= heroAnime.slug %>?season=<%= heroAnime.seasons[0].season %>&episode=<%= heroAnime.seasons[0].episodes[0].episode %>" class="btn-play">
+                        <i class="fas fa-play"></i> Watch Now
+                    </a>
+                <% } else { %>
+                    <a href="/anime/<%= heroAnime.slug %>" class="btn-play"><i class="fas fa-play"></i> Watch Now</a>
+                <% } %>
+                <a href="/anime/<%= heroAnime.slug %>" class="btn-info"><i class="fas fa-info-circle"></i> Details</a>
+            </div>
+        </div>
+    </div>
+<% } %>
+
+<div id="continue-watching-section" class="history-section">
+    <div class="section-head"><span class="section-title">Continue Watching</span></div>
+    <div class="history-scroll" id="history-container">
+        </div>
+</div>
+
+<% if (trendingList && trendingList.length > 0) { %>
+    <div class="section-head"><span class="section-title">Trending Now</span></div>
+    <div class="trending-slider">
+        <% trendingList.forEach((anime) => { %>
+            <a href="/anime/<%= anime.slug %>" class="trend-card">
+                <img src="<%= anime.thumbnail %>" class="trend-poster" alt="<%= anime.title %>">
+            </a>
+        <% }) %>
+    </div>
+<% } %>
+
+<div class="section-head">
+    <span class="section-title"><%= sectionTitle || 'Latest Updates' %></span>
+</div>
+
+<div class="anime-grid">
+    <% animeList.forEach(anime => { %>
+        <a href="/anime/<%= anime.slug %>" class="grid-card">
+            <img src="<%= anime.thumbnail %>" class="grid-img" loading="lazy">
+            
+            <div class="card-overlay">
+                <div class="card-title"><%= anime.title %></div>
+            </div>
+        </a>
+    <% }) %>
+</div>
+
+<br><br><br>
+
+<%- include('partials/bottom_nav') %>
+<%- include('partials/footer') %>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const historyData = JSON.parse(localStorage.getItem('myWatchHistory') || '[]');
+        const container = document.getElementById('history-container');
+        const section = document.getElementById('continue-watching-section');
+
+        if (historyData.length > 0) {
+            section.style.display = 'block';
+            historyData.forEach(item => {
+                const card = document.createElement('a');
+                card.href = item.link;
+                card.className = 'history-card';
+                card.innerHTML = `
+                    <img src="${item.thumbnail}" class="hist-img">
+                    <div class="play-overlay"><i class="fas fa-play"></i></div>
+                    <div class="hist-info">
+                        <div class="hist-title">${item.title}</div>
+                        <div class="hist-ep">S${item.season} E${item.episode}</div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+    });
+</script>

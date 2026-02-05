@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="brand">AnimeVerse Pro</div>
+        <div class="menu">
+            <a href="/admin/dashboard" class="active">📊 Dashboard</a>
+            <a href="/admin/add-anime">➕ Add Anime</a>
+            <a href="/admin/manage-anime">📂 Manage Library</a>
+            <a href="/admin/settings">⚙️ Settings</a>
+            <a href="/" target="_blank">🌍 Visit Site</a>
+            <a href="/auth/logout" style="color:#e74c3c;">🚪 Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h3>Dashboard</h3>
+            <span>Welcome, Admin</span>
+        </header>
+
+        <div class="dashboard-container">
+            
+            <% if(typeof msg !== 'undefined') { %>
+                <div style="background:#d4edda; color:#155724; padding:15px; border-radius:5px; margin-bottom:20px;">
+                    <%= msg %>
+                </div>
+            <% } %>
+
+            <div style="display:flex; gap:20px; margin-bottom:30px;">
+                <div class="card" style="flex:1; border-top-color:#3498db;">
+                    <h2><%= stats.totalAnime %></h2>
+                    <p>Total Anime</p>
+                </div>
+                <div class="card" style="flex:1; border-top-color:#2ecc71;">
+                    <h2><%= stats.tracking %></h2>
+                    <p>Active Tasks</p>
+                </div>
+                <div class="card" style="flex:1; border-top-color:#f1c40f;">
+                    <h2><%= stats.completed %></h2>
+                    <p>Completed Seasons</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>⚡ Quick Actions</h3>
+                <form action="/admin/run-tracker" method="POST" style="margin-top:10px;">
+                    <button type="submit" class="btn btn-primary">🔄 Run Auto-Tracker Now</button>
+                    <small style="color:#666; margin-left:10px;">Runs automatically every 6 hours.</small>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>🔔 Recent Activity</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Message</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if(notifications.length === 0) { %>
+                            <tr><td colspan="3">No updates yet.</td></tr>
+                        <% } %>
+                        <% notifications.forEach(n => { %>
+                            <tr>
+                                <td style="font-weight:bold; color:<%= n.type === 'success' ? '#2ecc71' : '#3498db' %>">
+                                    <%= n.type.toUpperCase() %>
+                                </td>
+                                <td><b><%= n.title %></b> - <%= n.message %></td>
+                                <td style="color:#888; font-size:12px;"><%= n.date %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

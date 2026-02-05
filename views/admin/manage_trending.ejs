@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Trending</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <style>
+        :root { --primary: #00b894; --dark: #1e1e2e; }
+        body { background: #181825; color: #cdd6f4; font-family: 'Segoe UI', sans-serif; }
+
+        /* Search Bar */
+        .sticky-header {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(24, 24, 37, 0.95);
+            padding: 15px 0; border-bottom: 1px solid #333;
+            display: flex; gap: 10px; align-items: center;
+        }
+        .search-input {
+            flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #444;
+            background: #111; color: white; outline: none;
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px; margin-top: 20px;
+        }
+
+        /* Anime Card */
+        .anime-card {
+            background: #1e1e2e; border-radius: 8px; overflow: hidden;
+            border: 2px solid transparent; position: relative; transition: 0.3s;
+        }
+        .anime-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+        /* Highlight Active Trending */
+        .anime-card.is-trending {
+            border-color: var(--primary);
+            background: rgba(0, 184, 148, 0.1);
+        }
+
+        /* Rank Input Styling */
+        .rank-input-wrapper {
+            position: absolute; top: 10px; right: 10px;
+            background: rgba(0,0,0,0.8); padding: 5px; border-radius: 6px;
+        }
+        .rank-input {
+            width: 50px; padding: 5px; text-align: center; font-weight: bold;
+            border: 1px solid #555; background: #222; color: #fff; border-radius: 4px;
+        }
+        .rank-input:focus { border-color: var(--primary); outline: none; background: #000; }
+        
+        .card-info { padding: 10px; text-align: center; }
+        .card-title { font-size: 13px; font-weight: bold; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        
+        .btn-save {
+            background: linear-gradient(45deg, #00b894, #0984e3); color: white;
+            border: none; padding: 12px 30px; border-radius: 30px; font-weight: bold; cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">AnimeVerse Pro</div>
+        <div class="menu">
+            <a href="/admin/dashboard">📊 Dashboard</a>
+            <a href="/admin/add-anime">➕ Add Anime</a>
+            <a href="/admin/manage-anime">📂 Library</a>
+            <a href="/admin/trending" class="active">🔥 Trending</a>
+            <a href="/admin/settings">⚙️ Settings</a>
+            <a href="/auth/logout">🚪 Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-container">
+            <form action="/admin/trending" method="POST">
+                
+                <div class="sticky-header">
+                    <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search Anime..." onkeyup="filterAnime()">
+                    <button type="submit" class="btn-save">💾 Save Ranks</button>
+                </div>
+
+                <p style="color:#aaa; font-size:14px; margin-top:10px;">
+                    Enter a number (1, 2, 3...) to set rank. Leave empty to remove from trending.
+                </p>
+
+                <div class="grid-container" id="animeGrid">
+                    <% library.forEach(anime => { 
+                        // Check currrent rank
+                        let currentRank = trendingIds.indexOf(anime.id) + 1; 
+                        let val = currentRank > 0 ? currentRank : '';
+                    %>
+                        <div class="anime-card filter-item <%= val ? 'is-trending' : '' %>" data-title="<%= anime.title.toLowerCase() %>">
+                            
+                            <input type="hidden" name="animeIds[]" value="<%= anime.id %>">
+                            
+                            <div class="rank-input-wrapper">
+                                <span style="font-size:12px; color:#ddd;">#</span>
+                                <input type="number" name="ranks[]" value="<%= val %>" class="rank-input" placeholder="-" min="1">
+                            </div>
+
+                            <img src="<%= anime.thumbnail %>" style="width:100%; height:200px; object-fit:cover; display:block;">
+                            <div class="card-info">
+                                <p class="card-title"><%= anime.title %></p>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function filterAnime() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.getElementsByClassName('filter-item');
+            for (let i = 0; i < items.length; i++) {
+                const title = items[i].getAttribute('data-title');
+                items[i].style.display = title.includes(input) ? "" : "none";
+            }
+        }
+    </script>
+</body>
+</html>

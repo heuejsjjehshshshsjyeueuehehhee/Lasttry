@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Anime</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <style>
+        .season-row { border-top: 1px solid #333; padding-top: 15px; margin-top: 15px; position: relative; }
+        .remove-btn { position: absolute; right: 0; top: 15px; background: red; border: none; color: white; cursor: pointer; padding: 2px 8px; font-size: 12px; }
+        .add-btn { background: #444; border: 1px dashed #777; color: #ccc; width: 100%; padding: 10px; cursor: pointer; margin-top: 10px; }
+        .add-btn:hover { background: #555; color: white; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">AnimeVerse Pro</div>
+        <div class="menu">
+            <a href="/admin/dashboard">📊 Dashboard</a>
+            <a href="/admin/add-anime" class="active">➕ Add Anime</a>
+            <a href="/admin/manage-anime">📂 Manage Library</a>
+            <a href="/admin/trending">🔥 Trending</a>
+            <a href="/admin/settings">⚙️ Settings</a>
+            <a href="/auth/logout">🚪 Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header><h3>Add New Anime</h3></header>
+
+        <div class="dashboard-container">
+            <div class="card" style="max-width:600px; margin:auto;">
+                <h3 style="margin-bottom:20px; color:#2ecc71;">🚀 Auto-Tracker Setup</h3>
+                <p style="margin-bottom:20px; color:#666;">
+                    Just paste the <b>WatchAnimeWorld</b> link. System will fetch metadata and start tracking.
+                </p>
+
+                <% if(typeof error !== 'undefined') { %>
+                    <div style="background:#f8d7da; color:#721c24; padding:10px; margin-bottom:15px; border-radius:4px;"><%= error %></div>
+                <% } %>
+
+                <form action="/admin/add-anime" method="POST">
+                    
+                    <div class="form-group">
+                        <label>Series URL</label>
+                        <input type="text" name="url" class="form-control" placeholder="https://watchanimeworld.net/series/..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Type</label>
+                        <select name="type" class="form-control">
+                            <option value="TV">Series (TV Show)</option>
+                            <option value="MOVIE">Movie</option>
+                        </select>
+                    </div>
+
+                    <div id="seasons-container">
+                        <div class="season-group">
+                            <div style="display:flex; gap:15px;">
+                                <div class="form-group" style="flex:1;">
+                                    <label>Season</label>
+                                    <input type="number" name="season[]" class="form-control" value="1" required>
+                                </div>
+                                <div class="form-group" style="flex:1;">
+                                    <label>Start From Ep</label>
+                                    <input type="number" name="episode[]" class="form-control" value="1" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Stop At Episode (Optional)</label>
+                                <input type="number" name="targetEpisode[]" class="form-control" placeholder="e.g. 12 or 24">
+                                <small style="color:#888; font-size:11px;">Leave empty to auto-detect total episodes.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="add-btn" onclick="addSeason()">+ Add Another Season</button>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%; margin-top:20px;">
+                        ✅ Start Tracking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addSeason() {
+            const container = document.getElementById('seasons-container');
+            const div = document.createElement('div');
+            div.className = 'season-row';
+            div.innerHTML = `
+                <button type="button" class="remove-btn" onclick="this.parentElement.remove()">Remove</button>
+                <div style="display:flex; gap:15px;">
+                    <div class="form-group" style="flex:1;">
+                        <label>Season</label>
+                        <input type="number" name="season[]" class="form-control" required>
+                    </div>
+                    <div class="form-group" style="flex:1;">
+                        <label>Start From Ep</label>
+                        <input type="number" name="episode[]" class="form-control" value="1" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Stop At Episode (Optional)</label>
+                    <input type="number" name="targetEpisode[]" class="form-control" placeholder="e.g. 12 or 24">
+                </div>
+            `;
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>

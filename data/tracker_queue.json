@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1770190105076,
+        "libraryId": 1770190105075,
+        "title": "Naruto",
+        "slug": "naruto",
+        "season": 1,
+        "lastEpisode": 57,
+        "targetEpisode": 57,
+        "totalEpisodes": 220,
+        "url": "https://watchanimeworld.net/series/naruto/",
+        "completed": true,
+        "lastChecked": "2026-02-04T07:33:34.307Z"
+    },
+    {
+        "id": 1770190136887,
+        "libraryId": 1770190105075,
+        "title": "Naruto",
+        "slug": "naruto",
+        "season": 2,
+        "lastEpisode": 100,
+        "targetEpisode": 100,
+        "totalEpisodes": 220,
+        "url": "https://watchanimeworld.net/series/naruto/",
+        "completed": true,
+        "lastChecked": "2026-02-04T07:37:03.362Z"
+    },
+    {
+        "id": 1770325663770,
+        "libraryId": "f13cbb8d-87ce-4c63-b79e-d62ba7019201",
+        "title": "The Daily Life Of The Immortal King",
+        "slug": "the-daily-life-of-the-immortal-king",
+        "season": 1,
+        "lastEpisode": 12,
+        "targetEpisode": 12,
+        "totalEpisodes": 15,
+        "url": "https://watchanimeworld.net/series/the-daily-life-of-the-immortal-king/",
+        "completed": true,
+        "lastChecked": "2026-02-05T21:08:40.758Z"
+    }
+]

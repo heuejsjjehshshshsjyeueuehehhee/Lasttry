@@ -1,0 +1,611 @@
+[
+    {
+        "id": 1770190105075,
+        "title": "Naruto",
+        "description": "Naruto Uzumaki, a hyperactive and knuckle-headed ninja, lives in Konohagakure, the Hidden Leaf village. Moments prior to his birth, a huge demon known as the Kyuubi, the Nine-tailed Fox, attacked Konohagakure and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the 4th Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto. \nShunned because of the presence of the Kyuubi inside him, Naruto struggles to find his place in the village. He strives to become the Hokage of Konohagakure, and he meets many friends and foes along the way. \n(Source: MAL Rewrite)",
+        "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20-dE6UHbFFg1A5.jpg",
+        "genres": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "slug": "naruto",
+        "totalEpisodes": 220,
+        "type": "TV",
+        "seasons": [
+            {
+                "season": 1,
+                "episodes": [
+                    {
+                        "number": 1,
+                        "url": "https://short.icu/6q7BvdjlN",
+                        "dateAdded": "2026-02-04T07:28:59.782Z"
+                    },
+                    {
+                        "number": 2,
+                        "url": "https://short.icu/wgbU1rWgJ",
+                        "dateAdded": "2026-02-04T07:29:04.855Z"
+                    },
+                    {
+                        "number": 3,
+                        "url": "https://short.icu/HmAp7kdTa",
+                        "dateAdded": "2026-02-04T07:29:09.721Z"
+                    },
+                    {
+                        "number": 4,
+                        "url": "https://short.icu/qgeNcp09z",
+                        "dateAdded": "2026-02-04T07:29:14.588Z"
+                    },
+                    {
+                        "number": 5,
+                        "url": "https://short.icu/gJm71fa8Z",
+                        "dateAdded": "2026-02-04T07:29:19.539Z"
+                    },
+                    {
+                        "number": 6,
+                        "url": "https://short.icu/P_dcTkKok",
+                        "dateAdded": "2026-02-04T07:29:24.604Z"
+                    },
+                    {
+                        "number": 7,
+                        "url": "https://short.icu/wANPY9Fv9",
+                        "dateAdded": "2026-02-04T07:29:29.476Z"
+                    },
+                    {
+                        "number": 8,
+                        "url": "https://short.icu/EYabcB3FF",
+                        "dateAdded": "2026-02-04T07:29:34.405Z"
+                    },
+                    {
+                        "number": 9,
+                        "url": "https://short.icu/Nai4ats-2",
+                        "dateAdded": "2026-02-04T07:29:39.241Z"
+                    },
+                    {
+                        "number": 10,
+                        "url": "https://short.icu/c9LAfc2NW",
+                        "dateAdded": "2026-02-04T07:29:44.082Z"
+                    },
+                    {
+                        "number": 11,
+                        "url": "https://short.icu/Z_E1xZDom",
+                        "dateAdded": "2026-02-04T07:29:48.979Z"
+                    },
+                    {
+                        "number": 12,
+                        "url": "https://short.icu/Bm0gapd-S",
+                        "dateAdded": "2026-02-04T07:29:53.953Z"
+                    },
+                    {
+                        "number": 13,
+                        "url": "https://short.icu/q-3fhXhbrT",
+                        "dateAdded": "2026-02-04T07:29:58.780Z"
+                    },
+                    {
+                        "number": 14,
+                        "url": "https://short.icu/2nYd4gOos",
+                        "dateAdded": "2026-02-04T07:30:03.599Z"
+                    },
+                    {
+                        "number": 15,
+                        "url": "https://short.icu/WKs2_LMLR",
+                        "dateAdded": "2026-02-04T07:30:08.470Z"
+                    },
+                    {
+                        "number": 16,
+                        "url": "https://short.icu/S2PJ3S8GK",
+                        "dateAdded": "2026-02-04T07:30:13.259Z"
+                    },
+                    {
+                        "number": 17,
+                        "url": "https://short.icu/-vWABnO3t",
+                        "dateAdded": "2026-02-04T07:30:18.140Z"
+                    },
+                    {
+                        "number": 18,
+                        "url": "https://short.icu/cDrKUxNqi",
+                        "dateAdded": "2026-02-04T07:30:23.040Z"
+                    },
+                    {
+                        "number": 19,
+                        "url": "https://short.icu/Ex_BmaEPa",
+                        "dateAdded": "2026-02-04T07:30:27.941Z"
+                    },
+                    {
+                        "number": 20,
+                        "url": "https://short.icu/jWhLIVW8h",
+                        "dateAdded": "2026-02-04T07:30:32.869Z"
+                    },
+                    {
+                        "number": 21,
+                        "url": "https://short.icu/RJwGNM547",
+                        "dateAdded": "2026-02-04T07:30:37.689Z"
+                    },
+                    {
+                        "number": 22,
+                        "url": "https://short.icu/RlxBEnsPl",
+                        "dateAdded": "2026-02-04T07:30:42.617Z"
+                    },
+                    {
+                        "number": 23,
+                        "url": "https://short.icu/L80XDxKdD",
+                        "dateAdded": "2026-02-04T07:30:47.524Z"
+                    },
+                    {
+                        "number": 24,
+                        "url": "https://short.icu/TiALTroHq",
+                        "dateAdded": "2026-02-04T07:30:52.397Z"
+                    },
+                    {
+                        "number": 25,
+                        "url": "https://short.icu/34Vhas0LL",
+                        "dateAdded": "2026-02-04T07:30:57.230Z"
+                    },
+                    {
+                        "number": 26,
+                        "url": "https://short.icu/8ntG-UMtV",
+                        "dateAdded": "2026-02-04T07:31:02.097Z"
+                    },
+                    {
+                        "number": 27,
+                        "url": "https://short.icu/SPRdJlo26",
+                        "dateAdded": "2026-02-04T07:31:07.004Z"
+                    },
+                    {
+                        "number": 28,
+                        "url": "https://short.icu/Gj32gItrC",
+                        "dateAdded": "2026-02-04T07:31:12.019Z"
+                    },
+                    {
+                        "number": 29,
+                        "url": "https://short.icu/DrGTdVQWb",
+                        "dateAdded": "2026-02-04T07:31:16.869Z"
+                    },
+                    {
+                        "number": 30,
+                        "url": "https://short.icu/tunNuiwjn",
+                        "dateAdded": "2026-02-04T07:31:21.921Z"
+                    },
+                    {
+                        "number": 31,
+                        "url": "https://short.icu/MNc724WvH",
+                        "dateAdded": "2026-02-04T07:31:26.858Z"
+                    },
+                    {
+                        "number": 32,
+                        "url": "https://short.icu/8BQr0jMLp",
+                        "dateAdded": "2026-02-04T07:31:31.731Z"
+                    },
+                    {
+                        "number": 33,
+                        "url": "https://short.icu/04i3qnTye",
+                        "dateAdded": "2026-02-04T07:31:36.625Z"
+                    },
+                    {
+                        "number": 34,
+                        "url": "https://short.icu/QRsuSEzkQ",
+                        "dateAdded": "2026-02-04T07:31:41.466Z"
+                    },
+                    {
+                        "number": 35,
+                        "url": "https://short.icu/YRSizA8_C",
+                        "dateAdded": "2026-02-04T07:31:46.370Z"
+                    },
+                    {
+                        "number": 36,
+                        "url": "https://short.icu/S-8j9xddf",
+                        "dateAdded": "2026-02-04T07:31:51.304Z"
+                    },
+                    {
+                        "number": 37,
+                        "url": "https://short.icu/b2jv3562c",
+                        "dateAdded": "2026-02-04T07:31:56.190Z"
+                    },
+                    {
+                        "number": 38,
+                        "url": "https://short.icu/FhTgiRGhF",
+                        "dateAdded": "2026-02-04T07:32:01.061Z"
+                    },
+                    {
+                        "number": 39,
+                        "url": "https://short.icu/Uk0GQqJmN",
+                        "dateAdded": "2026-02-04T07:32:05.920Z"
+                    },
+                    {
+                        "number": 40,
+                        "url": "https://short.icu/wtWgG6lbA",
+                        "dateAdded": "2026-02-04T07:32:11.081Z"
+                    },
+                    {
+                        "number": 41,
+                        "url": "https://short.icu/xgm4mRwPG",
+                        "dateAdded": "2026-02-04T07:32:15.962Z"
+                    },
+                    {
+                        "number": 42,
+                        "url": "https://short.icu/bzlfHeVgN",
+                        "dateAdded": "2026-02-04T07:32:20.864Z"
+                    },
+                    {
+                        "number": 43,
+                        "url": "https://short.icu/6_seR7Hr9",
+                        "dateAdded": "2026-02-04T07:32:25.824Z"
+                    },
+                    {
+                        "number": 44,
+                        "url": "https://short.icu/7yX2iNt0J",
+                        "dateAdded": "2026-02-04T07:32:30.718Z"
+                    },
+                    {
+                        "number": 45,
+                        "url": "https://short.icu/s1aDC04Bk",
+                        "dateAdded": "2026-02-04T07:32:35.667Z"
+                    },
+                    {
+                        "number": 46,
+                        "url": "https://short.icu/TIoGZo9x4",
+                        "dateAdded": "2026-02-04T07:32:40.546Z"
+                    },
+                    {
+                        "number": 47,
+                        "url": "https://short.icu/31GRk0Jm6",
+                        "dateAdded": "2026-02-04T07:32:45.349Z"
+                    },
+                    {
+                        "number": 48,
+                        "url": "https://short.icu/d7moT1FPx",
+                        "dateAdded": "2026-02-04T07:32:50.272Z"
+                    },
+                    {
+                        "number": 49,
+                        "url": "https://short.icu/rHxix_9YI",
+                        "dateAdded": "2026-02-04T07:32:55.115Z"
+                    },
+                    {
+                        "number": 50,
+                        "url": "https://short.icu/DiV4DURWZ",
+                        "dateAdded": "2026-02-04T07:32:59.886Z"
+                    },
+                    {
+                        "number": 51,
+                        "url": "https://short.icu/0xq9QURVRA",
+                        "dateAdded": "2026-02-04T07:33:04.819Z"
+                    },
+                    {
+                        "number": 52,
+                        "url": "https://short.icu/SJJZwVpXi",
+                        "dateAdded": "2026-02-04T07:33:09.745Z"
+                    },
+                    {
+                        "number": 53,
+                        "url": "https://short.icu/ehzGBf66e",
+                        "dateAdded": "2026-02-04T07:33:14.670Z"
+                    },
+                    {
+                        "number": 54,
+                        "url": "https://short.icu/16PJHcHZ7",
+                        "dateAdded": "2026-02-04T07:33:19.651Z"
+                    },
+                    {
+                        "number": 55,
+                        "url": "https://short.icu/_k5awcC09",
+                        "dateAdded": "2026-02-04T07:33:24.538Z"
+                    },
+                    {
+                        "number": 56,
+                        "url": "https://short.icu/M7TzXK-9b",
+                        "dateAdded": "2026-02-04T07:33:29.474Z"
+                    },
+                    {
+                        "number": 57,
+                        "url": "https://short.icu/pYSG0lf7c",
+                        "dateAdded": "2026-02-04T07:33:34.307Z"
+                    }
+                ]
+            },
+            {
+                "season": 2,
+                "episodes": [
+                    {
+                        "number": 58,
+                        "url": "https://short.icu/U46g8ioaq",
+                        "dateAdded": "2026-02-04T07:33:37.117Z"
+                    },
+                    {
+                        "number": 59,
+                        "url": "https://short.icu/eBk4D00Hb",
+                        "dateAdded": "2026-02-04T07:33:42.315Z"
+                    },
+                    {
+                        "number": 60,
+                        "url": "https://short.icu/1kwsv9zD4",
+                        "dateAdded": "2026-02-04T07:33:47.234Z"
+                    },
+                    {
+                        "number": 61,
+                        "url": "https://short.icu/ljXQqSgci",
+                        "dateAdded": "2026-02-04T07:33:52.177Z"
+                    },
+                    {
+                        "number": 62,
+                        "url": "https://short.icu/Jb_zFVI_k",
+                        "dateAdded": "2026-02-04T07:33:57.072Z"
+                    },
+                    {
+                        "number": 63,
+                        "url": "https://short.icu/jR4fYH-kj",
+                        "dateAdded": "2026-02-04T07:34:01.964Z"
+                    },
+                    {
+                        "number": 64,
+                        "url": "https://short.icu/4xrJI342X",
+                        "dateAdded": "2026-02-04T07:34:06.842Z"
+                    },
+                    {
+                        "number": 65,
+                        "url": "https://short.icu/tL9dQorfD",
+                        "dateAdded": "2026-02-04T07:34:11.576Z"
+                    },
+                    {
+                        "number": 66,
+                        "url": "https://short.icu/dMdqrm30k",
+                        "dateAdded": "2026-02-04T07:34:16.537Z"
+                    },
+                    {
+                        "number": 67,
+                        "url": "https://short.icu/vWdL0qmkq",
+                        "dateAdded": "2026-02-04T07:34:21.304Z"
+                    },
+                    {
+                        "number": 68,
+                        "url": "https://short.icu/7An0DV7Mzu",
+                        "dateAdded": "2026-02-04T07:34:26.193Z"
+                    },
+                    {
+                        "number": 69,
+                        "url": "https://short.icu/r_e6CAID0",
+                        "dateAdded": "2026-02-04T07:34:31.052Z"
+                    },
+                    {
+                        "number": 70,
+                        "url": "https://short.icu/qpK61EnaL",
+                        "dateAdded": "2026-02-04T07:34:36.183Z"
+                    },
+                    {
+                        "number": 71,
+                        "url": "https://short.icu/UZwEKxAvh",
+                        "dateAdded": "2026-02-04T07:34:41.061Z"
+                    },
+                    {
+                        "number": 72,
+                        "url": "https://short.icu/HZ9fsaYxh",
+                        "dateAdded": "2026-02-04T07:34:46.063Z"
+                    },
+                    {
+                        "number": 73,
+                        "url": "https://short.icu/otsh9etOo",
+                        "dateAdded": "2026-02-04T07:34:50.934Z"
+                    },
+                    {
+                        "number": 74,
+                        "url": "https://short.icu/nPmuiLG4N",
+                        "dateAdded": "2026-02-04T07:34:55.847Z"
+                    },
+                    {
+                        "number": 75,
+                        "url": "https://short.icu/_hsuMbE1-",
+                        "dateAdded": "2026-02-04T07:35:00.640Z"
+                    },
+                    {
+                        "number": 76,
+                        "url": "https://short.icu/01SdrN3iA",
+                        "dateAdded": "2026-02-04T07:35:05.599Z"
+                    },
+                    {
+                        "number": 77,
+                        "url": "https://short.icu/o7rUKPnXC",
+                        "dateAdded": "2026-02-04T07:35:10.498Z"
+                    },
+                    {
+                        "number": 78,
+                        "url": "https://short.icu/fIsxTOsZaA",
+                        "dateAdded": "2026-02-04T07:35:15.411Z"
+                    },
+                    {
+                        "number": 79,
+                        "url": "https://short.icu/TymwmaUAH",
+                        "dateAdded": "2026-02-04T07:35:20.285Z"
+                    },
+                    {
+                        "number": 80,
+                        "url": "https://short.icu/k2UH3tWL1",
+                        "dateAdded": "2026-02-04T07:35:25.187Z"
+                    },
+                    {
+                        "number": 81,
+                        "url": "https://short.icu/97U1H-W98",
+                        "dateAdded": "2026-02-04T07:35:30.062Z"
+                    },
+                    {
+                        "number": 82,
+                        "url": "https://short.icu/9rdq8kmbI",
+                        "dateAdded": "2026-02-04T07:35:34.953Z"
+                    },
+                    {
+                        "number": 83,
+                        "url": "https://short.icu/F2D5r0Lfe",
+                        "dateAdded": "2026-02-04T07:35:39.881Z"
+                    },
+                    {
+                        "number": 84,
+                        "url": "https://short.icu/XU9qodNctE",
+                        "dateAdded": "2026-02-04T07:35:44.813Z"
+                    },
+                    {
+                        "number": 85,
+                        "url": "https://short.icu/aZ7DOCFHF",
+                        "dateAdded": "2026-02-04T07:35:49.701Z"
+                    },
+                    {
+                        "number": 86,
+                        "url": "https://short.icu/TrYhDQ8ip",
+                        "dateAdded": "2026-02-04T07:35:54.768Z"
+                    },
+                    {
+                        "number": 87,
+                        "url": "https://short.icu/gSaP67mhe1",
+                        "dateAdded": "2026-02-04T07:35:59.628Z"
+                    },
+                    {
+                        "number": 88,
+                        "url": "https://short.icu/CEEYWCvng",
+                        "dateAdded": "2026-02-04T07:36:04.512Z"
+                    },
+                    {
+                        "number": 89,
+                        "url": "https://short.icu/VEEa3CqWXi",
+                        "dateAdded": "2026-02-04T07:36:09.436Z"
+                    },
+                    {
+                        "number": 90,
+                        "url": "https://short.icu/VMpusMcka",
+                        "dateAdded": "2026-02-04T07:36:14.258Z"
+                    },
+                    {
+                        "number": 91,
+                        "url": "https://short.icu/UYATLZHyK",
+                        "dateAdded": "2026-02-04T07:36:19.276Z"
+                    },
+                    {
+                        "number": 92,
+                        "url": "https://short.icu/xOeuxpJvT",
+                        "dateAdded": "2026-02-04T07:36:24.195Z"
+                    },
+                    {
+                        "number": 93,
+                        "url": "https://short.icu/XnqmxCgtH",
+                        "dateAdded": "2026-02-04T07:36:29.232Z"
+                    },
+                    {
+                        "number": 94,
+                        "url": "https://short.icu/nHkIA9-YR",
+                        "dateAdded": "2026-02-04T07:36:34.133Z"
+                    },
+                    {
+                        "number": 95,
+                        "url": "https://short.icu/Lz7lwR3C4",
+                        "dateAdded": "2026-02-04T07:36:38.957Z"
+                    },
+                    {
+                        "number": 96,
+                        "url": "https://short.icu/Q7RTvSE47",
+                        "dateAdded": "2026-02-04T07:36:43.837Z"
+                    },
+                    {
+                        "number": 97,
+                        "url": "https://short.icu/9KSIKpZSP",
+                        "dateAdded": "2026-02-04T07:36:48.787Z"
+                    },
+                    {
+                        "number": 98,
+                        "url": "https://short.icu/hzSQxOAB0",
+                        "dateAdded": "2026-02-04T07:36:53.695Z"
+                    },
+                    {
+                        "number": 99,
+                        "url": "https://short.icu/ke8rej-JR3",
+                        "dateAdded": "2026-02-04T07:36:58.501Z"
+                    },
+                    {
+                        "number": 100,
+                        "url": "https://short.icu/mSUE2byhy",
+                        "dateAdded": "2026-02-04T07:37:03.362Z"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "f13cbb8d-87ce-4c63-b79e-d62ba7019201",
+        "title": "The Daily Life Of The Immortal King",
+        "description": "Wang Ling is a high school student with a cool and carefree demeanor. Coming off as someone with a very low spiritual force, he actually possesses a power capable of destroying the world at a moment's notice. To mitigate the volatile force within him, his parents have resorted to using an amulet as a temporary solution. However, the amulet weakens over time and Wang Ling's emotions also accelerate its deterioration. Now with the amulet on the verge of breaking, Wang Ling and his father race against time in order to fix it.",
+        "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114121-vxWVgIBlBjox.png",
+        "genres": [
+            "Adventure",
+            "Comedy",
+            "Fantasy",
+            "School",
+            "Slice of Life"
+        ],
+        "slug": "the-daily-life-of-the-immortal-king",
+        "totalEpisodes": 15,
+        "type": "TV",
+        "seasons": [
+            {
+                "season": 1,
+                "episodes": [
+                    {
+                        "number": 1,
+                        "url": "https://short.icu/LO7rmDFdo",
+                        "dateAdded": "2026-02-05T21:07:46.694Z"
+                    },
+                    {
+                        "number": 2,
+                        "url": "https://short.icu/pfJU041Eu",
+                        "dateAdded": "2026-02-05T21:07:51.622Z"
+                    },
+                    {
+                        "number": 3,
+                        "url": "https://short.icu/2rIRDqa_m",
+                        "dateAdded": "2026-02-05T21:07:56.729Z"
+                    },
+                    {
+                        "number": 4,
+                        "url": "https://short.icu/B7Ocq6k21",
+                        "dateAdded": "2026-02-05T21:08:01.533Z"
+                    },
+                    {
+                        "number": 5,
+                        "url": "https://short.icu/9nGS5tWC1",
+                        "dateAdded": "2026-02-05T21:08:06.408Z"
+                    },
+                    {
+                        "number": 6,
+                        "url": "https://short.icu/vdfVgLQ5L",
+                        "dateAdded": "2026-02-05T21:08:11.410Z"
+                    },
+                    {
+                        "number": 7,
+                        "url": "https://short.icu/7Vckfc07t",
+                        "dateAdded": "2026-02-05T21:08:16.340Z"
+                    },
+                    {
+                        "number": 8,
+                        "url": "https://short.icu/byeMNd-7r",
+                        "dateAdded": "2026-02-05T21:08:21.264Z"
+                    },
+                    {
+                        "number": 9,
+                        "url": "https://short.icu/Pn5aAU2FDx",
+                        "dateAdded": "2026-02-05T21:08:26.112Z"
+                    },
+                    {
+                        "number": 10,
+                        "url": "https://short.icu/Q1gJt2zjq",
+                        "dateAdded": "2026-02-05T21:08:31.050Z"
+                    },
+                    {
+                        "number": 11,
+                        "url": "https://short.icu/SuNAZw-QU",
+                        "dateAdded": "2026-02-05T21:08:35.888Z"
+                    },
+                    {
+                        "number": 12,
+                        "url": "https://short.icu/f6EKrZQ46",
+                        "dateAdded": "2026-02-05T21:08:40.758Z"
+                    }
+                ]
+            }
+        ]
+    }
+]

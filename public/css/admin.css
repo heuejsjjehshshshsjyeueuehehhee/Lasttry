@@ -1,1 +1,77 @@
 
+:root {
+    --sidebar-width: 260px;
+    --header-height: 60px;
+    --primary-admin: #3498db;
+    --danger: #e74c3c;
+    --success: #2ecc71;
+}
+
+body { display: flex; background: #f4f6f9; color: #333; font-family: 'Segoe UI', sans-serif; }
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width); height: 100vh; background: #2c3e50; color: white;
+    position: fixed; top: 0; left: 0; display: flex; flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.brand {
+    height: var(--header-height); display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; font-weight: bold; background: #1a252f; letter-spacing: 1px;
+}
+.menu a {
+    display: block; padding: 15px 25px; color: #b8c7ce; text-decoration: none;
+    border-left: 4px solid transparent; transition: 0.2s; font-size: 1rem;
+}
+.menu a:hover, .menu a.active { background: #34495e; color: white; border-left-color: var(--primary-admin); }
+
+/* Main Content */
+.main-content {
+    margin-left: var(--sidebar-width); width: calc(100% - var(--sidebar-width));
+    min-height: 100vh;
+}
+header {
+    height: var(--header-height); background: white; display: flex;
+    align-items: center; justify-content: space-between; padding: 0 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 30px;
+}
+
+.dashboard-container { padding: 0 30px 30px 30px; }
+
+/* Cards */
+.card {
+    background: white; padding: 25px; border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 20px;
+    border-top: 3px solid transparent;
+}
+.card h2 { font-size: 2rem; margin-bottom: 5px; }
+.card p { color: #777; font-size: 0.9rem; }
+
+/* Forms */
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #555; }
+.form-control {
+    width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;
+    font-size: 1rem; outline: none; transition: 0.3s;
+}
+.form-control:focus { border-color: var(--primary-admin); }
+
+/* Buttons */
+.btn {
+    padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer;
+    color: white; font-weight: 600; transition: 0.3s; display: inline-block;
+}
+.btn-primary { background: var(--primary-admin); }
+.btn-primary:hover { background: #2980b9; }
+.btn-danger { background: var(--danger); }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #f8f9fa; font-weight: 600; color: #555; }
+
+/* Notifications */
+.badge {
+    background: var(--danger); color: white; font-size: 11px; padding: 2px 6px;
+    border-radius: 10px; position: relative; top: -10px; left: -5px;
+    }
